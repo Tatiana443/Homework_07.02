@@ -9,4 +9,4 @@ m = int(input('Введите общее колличество чисел в н
 n = input('Ввод чисел набора N через пробел: ').split()
 m = input('Ввод чисел набора M через пробел: ').split()
 replay = set(n).intersection(m)
-print(*replay,sep=' ')
+print(*replay,sep =' ')
