@@ -10,17 +10,7 @@ n = int(input("Введите колличество кустов N: "))
 ber = list(map(int, input("Введите колличество ягод на каждом кусте: ").split()))
 max_sum = 0
 for i in ber:
-    pick_sum = sum(ber[i:i-3])
+    pick_sum = sum(ber[i:i+3])
     if pick_sum > max_sum:
          max_sum = pick_sum
          print(f'Максимальное число ягод --> {max_sum}')
-
-
-# i = 0
-# for i in range(len(ber)):
-#      pick_sum = (ber[i] + ber[i+1] + ber[i-1])
-#      if pick_sum > max_sum:
-#         max_sum = pick_sum
-# print(max_sum)
-
-#     i# print(f'Максимальное число ягод --> {max_sum}')
